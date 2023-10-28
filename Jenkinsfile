@@ -5,15 +5,17 @@ pipeline {
 
         stage ('#### Iniciação ####') {
             steps {
-                echo 'Passo 1: Iniciando dependencias...'
-                script {
-                //Aqui estarão os scripts que rodarão funções do container
+                step {
+                    echo 'Passo 1: Iniciando dependencias...'
+                    script {
+                    //Aqui estarão os scripts que rodarão funções do container
+                    }
                 }
-            }
-            steps {
-                echo 'Passo 2: Capturando dados de entrada...'
-                script {
-                //Aqui estarão os scripts que rodarão funções do container
+                step {
+                    echo 'Passo 2: Capturando dados de entrada...'
+                    script {
+                    //Aqui estarão os scripts que rodarão funções do container
+                    }
                 }
             }
         }
@@ -140,6 +142,6 @@ pipeline {
                 }
             }
         }
-        
+
     }
 }
