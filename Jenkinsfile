@@ -4,7 +4,7 @@ pipeline {
     stages 
     {
 
-        stage ('#### 1 - Iniciação ####')
+        stage ('#1 Iniciação')
         {
             steps
             {
@@ -16,128 +16,71 @@ pipeline {
             }
         }
 
-        // stage ('#### Compilação da BIOS ####') {
-        //     steps {
-        //         echo 'Passo 1: Preprocesssing...'
-        //         script {
-        //         //Aqui estarão os scripts que rodarão funções do container
-        //         }
-        //     }
-        //     steps {
-        //         echo 'Passo 2: Compiling....'
-        //         script {
-        //         //Aqui estarão os scripts que rodarão funções do container
-        //         }
-        //     }
-        //     steps {
-        //         echo 'Passo 3: Assembling....'
-        //         script {
-        //         //Aqui estarão os scripts que rodarão funções do container
-        //         }
-        //     }
-        //     steps {
-        //         echo 'Passo 4: Linking....'
-        //         script {
-        //         //Aqui estarão os scripts que rodarão funções do container
-        //         }
-        //     }
-        // }
+        stage ('#2 Compilação da BIOS') 
+        {
+            steps 
+            {
+                echo 'Etapa 2.1: Preprocesssing..'
+                echo 'Etapa 2.2: Compiling...'
+                echo 'Etapa 2.3: Assembling...'
+                echo 'Etapa 2.4: Linking...'
+                // script 
+                // {
+                // }
+            }
+        }
 
-        // stage ('#### Execução do HBFA ####') {
-        //     steps {
-        //         echo 'Passo 1: Common fuzzing frameworks...'
-        //         script {
-        //         //Aqui estarão os scripts que rodarão funções do container
-        //         }
-        //     }
-        //     steps {
-        //         echo 'Passo 2: Supports symbolic execution....'
-        //         script {
-        //         //Aqui estarão os scripts que rodarão funções do container
-        //         }
-        //     }
-        //     steps {
-        //         echo 'Passo 3: Incorporates Address Sanitizer....'
-        //         script {
-        //         //Aqui estarão os scripts que rodarão funções do container
-        //         }
-        //     }
-        //     steps {
-        //         echo 'Passo 4: Automated Unit Tests....'
-        //         script {
-        //         //Aqui estarão os scripts que rodarão funções do container
-        //         }
-        //     }
-        //     steps {
-        //         echo 'Passo 5: Generate code coverage reports....'
-        //         script {
-        //         //Aqui estarão os scripts que rodarão funções do container
-        //         }
-        //     }
-        // }
+        stage ('#3 Execução do HBFA')
+        {
+            steps 
+            {
+                echo 'Etapa 3.1: Checking common fuzzing frameworks...'
+                echo 'Etapa 3.2: Checking supports symbolic execution...'
+                echo 'Etapa 3.3: Checking Address Sanitizer...'
+                echo 'Etapa 3.4: Checking Automated Unit Tests...'
+                echo 'Etapa 3.5: Generating code coverage reports...'
+                // script 
+                // {
+                // }
+            }
+        }
 
-        // stage ('#### Análise dinâmica de Módulos EFI ####') {
-        //     steps {
-        //         echo 'Passo 1: Extração dos módulos com chipsec...'
-        //         script {
-        //         //Aqui estarão os scripts que rodarão funções do container
-        //         }
-        //     }
-        //     steps {
-        //         echo 'Passo 2: Instrumentação binária com Frida...'
-        //         script {
-        //         //Aqui estarão os scripts que rodarão funções do container
-        //         }
-        //     }
-        //     steps {
-        //         echo 'Passo 3: Fuzzificação com AFL/libFuzzer/Peach...'
-        //         script {
-        //         //Aqui estarão os scripts que rodarão funções do container
-        //         }
-        //     }
-        //     steps {
-        //         echo 'Passo 4: Automated Unit Tests....'
-        //         script {
-        //         //Aqui estarão os scripts que rodarão funções do container
-        //         }
-        //     }
-        //     steps {
-        //         echo 'Passo 5: Generating reports...'
-        //         script {
-        //         //Aqui estarão os scripts que rodarão funções do container
-        //         }
-        //     }
-        // }
+        stage ('#4 Análise dinâmica de Módulos EFI') 
+        {
+            steps 
+            {
+                echo 'Etapa 4.1: Extraindo módulos com chipsec...'
+                echo 'Etapa 4.2: Instrumentando com Frida...'
+                echo 'Etapa 4.3: Fuzzificando com AFL/libFuzzer/Peach...'
+                echo 'Etapa 4.4: Generating reports...'
+                // script 
+                // {
+                // }
+            }
+        }
 
-        // stage ('#### Consolidação de relatório final ####') {
-        //     steps {
-        //         echo 'Passo 1: Capturar relatórios gerados anteriormente...'
-        //         script {
-        //         //Aqui estarão os scripts que rodarão funções do container
-        //         }
-        //     }
-        //     steps {
-        //         echo 'Passo 2: Consolidar informações em um relatório final...'
-        //         script {
-        //         //Aqui estarão os scripts que rodarão funções do container
-        //         }
-        //     }
-        // }
+        stage ('#5 Consolidação de relatório final') 
+        {
+            steps
+            {
+                echo 'Etapa 5.1: Capturando relatórios gerados anteriormente...'
+                echo 'Etapa 5.2: Consolidando informações em um relatório final...'
+                // script 
+                // {
+                // }
+            }
+        }
         
-        // stage ('#### Finalização ####') {
-        //     steps {
-        //         echo 'Encerrar os processos...'
-        //         script {
-        //         //Aqui estarão os scripts que rodarão funções do container
-        //         }
-        //     }
-        //     steps {
-        //         echo 'Finalizar a execução do pipeline...'
-        //         script {
-        //         //Aqui estarão os scripts que rodarão funções do container
-        //         }
-        //     }
-        // }
+        stage ('#6 Finalização') 
+        {
+            steps 
+            {
+                echo '6.1 Encerrando os processos e o pipeline...'
+                // script
+                // {
+                // }
+            }
+        }
 
     }
 }
